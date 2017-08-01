@@ -1,0 +1,15 @@
+{
+  "name": "mails",
+  "version": "1.0.0",
+  "description": "actualizar nuestra lista de correos agregando los corres de los nuevos usuarios",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Guillen",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.3",
+    "body-parser": "~1.0.1"
+  }
+}
