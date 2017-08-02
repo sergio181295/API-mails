@@ -1,6 +1,7 @@
 var mongoose = require('mongoose');
+var user = require("./users");
 
-a = mongoose.connect('mongodb://172.17.0.2:27017/suscribers', function(error){
+mongoose.connect('mongodb://172.17.0.2:27017/suscribers', function(error){
    if(error){
       throw error; 
    }else{
@@ -10,3 +11,11 @@ a = mongoose.connect('mongodb://172.17.0.2:27017/suscribers', function(error){
 });
 
 module.exports = mongoose;
+
+var userSchema = mongoose.Schema({
+    userId : {type: String, required : true},
+    email : {type : String, required : true}
+});
+
+var userModel = mongoose.model('user',userSchema);
+user.setModel(userModel);
