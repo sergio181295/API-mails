@@ -1,0 +1,2 @@
+agregar la libreria Superagent para llamadas REST
+    npm install --save superagent   
