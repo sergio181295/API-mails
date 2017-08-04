@@ -1,0 +1,15 @@
+{
+    "api":{
+        "database":{
+            "host":"172.17.0.2",
+            "port":"27017",
+            "dbName":"emails"
+        },
+
+        "mailchimp":{
+            "instance":"us16",
+            "listId":"093b169080",
+            "apiKey":"2d4b32b10a50a205412f6bcfd88fd2de-us16" 
+        }
+    }
+}
