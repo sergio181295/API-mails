@@ -8,12 +8,14 @@ exports.create = function(req,status){
    var newUser = new user({
        userId : req.body.userId,
        email : req.body.email,
+       country : req.body.country,
        status : status
    });
     console.log(req.body.userId);
     console.log(req.body.email);
    return newUser.save(function(error, document){
        if(error){
+           console.log(error);
            return [];
        }else{
             return document;
